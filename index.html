@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>XYZ College/School</h2>
+        <h3>Student Registration Form</h3>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="studentImage">Student Image:</label>
+                <input type="file" id="studentImage" name="studentImage" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName">
+            </div>
+            <div class="form-group">
+                <label for="fatherName">Father's Name:</label>
+                <input type="text" id="fatherName" name="fatherName">
+            </div>
+            <div class="form-group">
+                <label for="motherName">Mother's Name:</label>
+                <input type="text" id="motherName" name="motherName">
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="level">Level:</label>
+                <select id="level" name="level">
+                    <option value="highSchool">High School</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+                    <option value="electricalEngineering">Electrical Engineering</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tel">Tel/Mobile:</label>
+                <input type="tel" id="tel" name="tel">
+            </div>
+            <h3>Permanent Address</h3>
+            <div class="form-group">
+                <label for="permState">State:</label>
+                <input type="text" id="permState" name="permState">
+            </div>
+            <div class="form-group">
+                <label for="permCity">City:</label>
+                <input type="text" id="permCity" name="permCity">
+            </div>
+            <div class="form-group">
+                <label for="permZip">Zip Code:</label>
+                <input type="text" id="permZip" name="permZip">
+            </div>
+            <div class="form-group">
+                <label for="permTel">Tel/Mobile:</label>
+                <input type="tel" id="permTel" name="permTel">
+            </div>
+            <h3>Temporary Address</h3>
+            <div class="form-group">
+                <input type="checkbox" id="sameAsPerm" name="sameAsPerm">
+                <label for="sameAsPerm">Same as Permanent Address</label>
+            </div>
+            <div class="form-group">
+                <label for="tempState">State:</label>
+                <input type="text" id="tempState" name="tempState">
+            </div>
+            <div class="form-group">
+                <label for="tempCity">City:</label>
+                <input type="text" id="tempCity" name="tempCity">
+            </div>
+            <div class="form-group">
+                <label for="tempZip">Zip Code:</label>
+                <input type="text" id="tempZip" name="tempZip">
+            </div>
+            <div class="form-group">
+                <label for="tempTel">Tel/Mobile:</label>
+                <input type="tel" id="tempTel" name="tempTel">
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

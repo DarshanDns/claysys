@@ -13,6 +13,7 @@
         <div class="form-group">
             <label for="studentImage">Student Image:</label>
             <input type="file" id="studentImage" name="studentImage" accept="image/*">
+            <p>(less than 5MB)</p>
         </div>
 
         <div class="form-group">
@@ -32,12 +33,12 @@
 
         <!-- <div class="form-group">
             <label>Gender:</label>
-            <input type="radio" id="genderMale" name="gender" value="Male"> 
             <label for="genderMale">Male</label>
-            <input type="radio" id="genderFemale" name="gender" value="Female"> 
+            <input type="radio" id="genderMale" name="gender" value="Male"> 
             <label for="genderFemale">Female</label>
-            <input type="radio" id="genderOther" name="gender" value="Other"> 
+            <input type="radio" id="genderFemale" name="gender" value="Female"> 
             <label for="genderOther">Other</label>
+            <input type="radio" id="genderOther" name="gender" value="Other"> 
         </div> -->
 
         <div class="form-group">
@@ -83,7 +84,7 @@
 
         <div class="form-group">
             <label for="tel">Tel/Mobile:</label>
-            <input type="tel" id="tel" name="tel" placeholder="000 000 0000">
+            <input type="text" id="tel" name="tel" placeholder="000 000 0000">
         </div>
         
         <hr>
@@ -101,18 +102,18 @@
 
         <div class="form-group">
             <label for="permZip">Zip Code:</label>
-            <input type="text" id="permZip" name="permZip" placeholder="Zip Code">
+            <input type="number" id="permZip" name="permZip" placeholder="Zip Code">
         </div>
 
         <div class="form-group">
             <label for="permTel">Tel/Mobile:</label>
-            <input type="tel" id="permTel" name="permTel" placeholder="000 000 0000">
+            <input type="text" id="permTel" name="permTel" placeholder="000 000 0000">
         </div>
         
         <hr>
         <h3>Temporary Address</h3>
 
-        <div >
+        <div class="form-group">
             <label for="sameAsPerm">Same as Permanent Address</label>
             <input type="checkbox" id="sameAsPerm" name="sameAsPerm">
         </div>
@@ -129,15 +130,16 @@
 
         <div class="form-group">
             <label for="tempZip">Zip Code:</label>
-            <input type="text" id="tempZip" name="tempZip" placeholder="Zip Code">
+            <input type="number" id="tempZip" name="tempZip" placeholder="Zip Code">
         </div>
 
         <div class="form-group">
             <label for="tempTel">Tel/Mobile:</label>
-            <input type="tel" id="tempTel" name="tempTel" placeholder="000 000 0000">
+            <input type="text" id="tempTel" name="tempTel" placeholder="000 000 0000">
         </div>
 
         <button type="submit">Register</button>
     </form>
+    <script src="validation.js"></script>
 </body>
 </html>

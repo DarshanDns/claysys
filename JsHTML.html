@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    <h1>JavaScript Practice Tasks</h1>
+    
+    <!-- Task 1: Hello World -->
+    <section>
+        <h2>1. Hello World</h2>
+        <p id="helloWorldMessage"></p>
+        <script>
+            document.getElementById('helloWorldMessage').innerText = "Hello, World!";
+        </script>
+    </section>
+    
+    <!-- Task 8: DOM Manipulation -->
+    <section>
+        <h2>8. DOM Manipulation</h2>
+        <p id="domText">This text will change when the button is clicked.</p>
+        <button onclick="document.getElementById('domText').innerText = 'The text has changed!'">Change Text</button>
+    </section>
+
+    <!-- Task 9: Events -->
+    <section>
+        <h2>9. Events</h2>
+        <button id="changeColorButton">Change Background Color</button>
+        <script>
+            document.getElementById('changeColorButton').addEventListener('click', function() {
+                document.body.style.backgroundColor = 
+                    document.body.style.backgroundColor === 'lightcoral' ? 'white' : 'lightcoral';
+            });
+        </script>
+    </section>
+    
+    <!-- Task 10: Form Validation -->
+    <section>
+        <h2>10. Form Validation</h2>
+        <form id="emailForm">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <input type="submit" value="Submit">
+        </form>
+        <p id="formValidationMessage"></p>
+        <script>
+            document.getElementById('emailForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var email = document.getElementById('email').value;
+                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;   // Took from internet.
+                var validationMessage;
+                if (emailPattern.test(email)) {
+                    validationMessage = "Email is valid.";
+                } else {
+                    validationMessage = "Email is invalid.";
+                }
+                document.getElementById('formValidationMessage').innerText = validationMessage;
+            });
+        </script>
+    </section>
+
+</body>
+</html>

@@ -36,6 +36,7 @@ form {
     width: 65%;
     padding: 8px;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .form-group input[type="file"]{
